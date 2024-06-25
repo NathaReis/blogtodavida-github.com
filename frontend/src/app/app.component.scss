@@ -1,0 +1,57 @@
+header nav ul {
+    position: relative;
+    width: 100vw;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    color: #1d1d1d;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    background: linear-gradient(-90deg, #fff, #b9b9b9);
+}
+
+header nav ul::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: .1px;
+
+    background-color: #3aa9e9;
+    box-shadow: 1px 1px 2px #0001;
+}
+
+#boxSearch input {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    height: 50px;
+    width: 400px;
+    left: calc(50vw - 200px);
+    
+    background: radial-gradient(#f0f0f04d, #ffffff46);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 1px #3aa9e9,
+        0 0 10px #3aa9e9,
+        0 0 30px #105c88;
+}
+
+#boxSearch input::placeholder {
+    color: #1d1d1d;
+}
+
+#boxSearch svg, #boxSearch svg path {
+    width: 40px;
+    height: 40px;
+    fill: #1d1d1d;
+    cursor: pointer;
+}
